@@ -7,7 +7,7 @@ export const GifExpertApp = () => {
   const [categories, setCategories] = useState(['Alucard']);
 
   const onAddCategory = ( newCategory ) => {
-    setCategories( [...categories, newCategory ])
+    setCategories( [newCategory, ...categories ])
   }
 
   return(
